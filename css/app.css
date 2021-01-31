@@ -7621,7 +7621,8 @@ body {
   /* Do not repeat the image */
   background-repeat: no-repeat;
   /* Resize the background image to cover the entire container */
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
   #showcase #bookNowbtn:hover {
     animation: pulse 1s;
     animation-timing-function: linear; }
