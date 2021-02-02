@@ -7591,7 +7591,14 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6; } }
 body {
-  font-family: "Raleway" , sans-serif; }
+  font-family: "Raleway" , sans-serif;
+  background-color: #f2f2f2;
+  margin: 0; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 .navbar {
   font-weight: 150;
@@ -7629,7 +7636,7 @@ body {
   #showcase #header {
     z-index: 2; }
   #showcase #overlay {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.4);
     /* absolute relative to showcase element */
     position: absolute;
     width: 100%;
@@ -7641,12 +7648,39 @@ body {
     font-family: "Questrial" sans-serif;
     line-height: 1; }
 
-.about .about-icons {
+.section-about .about-icons {
   max-width: 70px;
   max-height: 70px; }
-.about .activity-description {
+.section-about .activity-description {
   font-size: .80rem;
   line-spacing: .5rem; }
+.section-about .feature-box:hover {
+  transform: translate(-0.5rem) scale(1.02); }
+
+.section-see-and-do {
+  list-style: none;
+  width: 100%;
+  margin: 0; }
+  .section-see-and-do li {
+    display: block;
+    float: left;
+    width: 25%; }
+  .section-see-and-do .placetovisit {
+    width: 100%;
+    margin: 0;
+    /*so that the image does not flow out of the screen */
+    overflow: hidden;
+    background-color: black; }
+    .section-see-and-do .placetovisit img {
+      opacity: 0.9;
+      width: 100%;
+      height: 300px;
+      /*increase the size of the image */
+      transform: scale(1.15);
+      transition: transform 0.5s, opacity 0.5s; }
+    .section-see-and-do .placetovisit img:hover {
+      transform: scale(1);
+      opacity: 1; }
 
 /* Navigation bar shows up in screen size small and below
 */

@@ -26,9 +26,12 @@
     </button>
     <div class="collapse navbar-collapse" id="collapsableContent">
           <ul class="navbar-nav ml-auto"> <!-- ml-auto to move the nav items to the right of the links -->
-            <li class="nav-item "><a href="#" class="nav-link">Plan</a></li>
+            <li class="nav-item "><a href="#" class="nav-link">Pricing</a></li>
             <li class="nav-item ">
               <a href="#" class="nav-link">See & Do</a>
+            </li>
+            <li class="nav-item ">
+              <a href="#" class="nav-link">About</a>
             </li>
             <li class="nav-item ">
               <a href="#" class="nav-link">Stories</a>
@@ -50,7 +53,7 @@
       align-items-* on the vertical axis
       justify-content-* on the horizontal axis
    -->
-    <section id="showcase" class="d-flex align-items-center">
+    <section id="showcase" class="d-flex align-items-center mb-3">
       <div id="overlay"></div>
       <div  id="header" class="container text-white text-center  mt-5 ">
         <h3 class="display-5 mb-0">TAKE THE HASSLE OUT OF YOUR TOUR</h3>
@@ -60,11 +63,11 @@
       </div>
     </section>
 
-    <section class="about">
+    <section class="section-about">
       <div class="container text-center">
         <h4 class="display-5 mt-4 mb-5 ">YOU BOOK US, WE DO THE REST</h1>
           <div class="row">
-              <div class="col-3">
+              <div class="col-3 feature-box">
                 <img class="about-icons mb-2" src="../images/banff_hotel.svg" />
                 <h5>Hotels you need</h5>
                 <p class="activity-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati atque sapiente vel laudantium, molestiae dolore
@@ -73,21 +76,21 @@
               </div>
           
           
-            <div class="col-3">
+            <div class="col-3 feature-box">
               <img class="about-icons mb-2" src="../images/banff_Food.svg" />
               <h5>Food you need</h5>
               <p class="activity-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati atque sapiente vel laudantium, molestiae dolore
                 voluptate, officia, dignissimos fugiat blanditiis excepturi est ut. Ipsa, laudantium. Ipsum corporis minima molestias
                 facilis? Itaque corporis distinctio doloremque quisquam neque ipsa debitis repellendus?</p>
             </div>
-            <div class="col-3">
+            <div class="col-3 feature-box">
               <img class="about-icons mb-2" src="../images/banff_ski.svg" />
               <h5>Activities you need</h5>
               <p class="activity-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati atque sapiente vel laudantium, molestiae dolore
                 voluptate, officia, dignissimos fugiat blanditiis excepturi est ut. Ipsa, laudantium. Ipsum corporis minima molestias
                 facilis? Itaque corporis distinctio doloremque quisquam neque ipsa debitis repellendus?</p>
             </div>
-            <div class="col-3">
+            <div class="col-3 feature-box">
               <img class="about-icons mb-2" src="../images/banff_nature.svg" />
               <h5>Nature you need</h5>
               <p class="activity-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis obcaecati atque sapiente vel laudantium, molestiae dolore
@@ -99,6 +102,168 @@
           </div>
       </div>
     </section>
+
+      <section class="section-see-and-do">
+        <div class=" text-center">
+          <h4 class="display-5 mt-4 mb-5 mt-4 ">EXPLORE AND EXPERIENCE BANFF LIKE YOU HAVE NEVER DONE BEFORE</h4>
+        </div>
+       
+        <ul class="places-showcase">
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/banff-gondola.jpg"
+            </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/fairmont-banff-spring.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/johnson-canyon.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/Lake-Minnewanka.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/moraine-lake.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/town-banff.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/vermillion-lake.jpg" </figure>
+          </li>
+          <li>
+            <figure class="placetovisit">
+              <img src="../images/lake-louise.jpg" </figure>
+          </li>
+          
+        </ul>
+   
+  
+      </section>
+
+       
+
+
+    <section>
+    
+
+        <!-- END -->
+    
+    
+<!--
+        //https://www.web-eau.net/blog/10-examples-pricing-table-bootstrap
+    
+        <div class="row text-center align-items-end">
+         
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="bg-white p-5 rounded-lg shadow">
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">Single</h1>
+              <h2 class="h1 font-weight-bold">$50
+                <span class="text-small font-weight-normal ml-2">/ night</span>
+              </h2>
+    
+              <div class="custom-separator my-4 mx-auto bg-primary"></div>
+    
+              <ul class="list-unstyled my-5 text-small text-left">
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus</li>
+                <li class="mb-3 text-muted">
+                  <i class="fa fa-times mr-2"></i>
+                  <del>Nam libero tempore</del>
+                </li>
+                <li class="mb-3 text-muted">
+                  <i class="fa fa-times mr-2"></i>
+                  <del>Sed ut perspiciatis</del>
+                </li>
+                <li class="mb-3 text-muted">
+                  <i class="fa fa-times mr-2"></i>
+                  <del>Sed ut perspiciatis</del>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+            </div>
+          </div>
+  
+    
+
+          <div class="col-lg-4 mb-5 mb-lg-0">
+            <div class="bg-white p-5 rounded-lg shadow">
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">Couple</h1>
+              <h2 class="h1 font-weight-bold">$80
+                <span class="text-small font-weight-normal ml-2">/ night</span>
+              </h2>
+    
+              <div class="custom-separator my-4 mx-auto bg-primary"></div>
+    
+              <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Nam libero tempore</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+                <li class="mb-3 text-muted">
+                  <i class="fa fa-times mr-2"></i>
+                  <del>Sed ut perspiciatis</del>
+                </li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+            </div>
+          </div>
+          <!-- END -->
+    
+          <!--
+    
+        
+          <div class="col-lg-4">
+            <div class="bg-white p-5 rounded-lg shadow">
+              <h1 class="h6 text-uppercase font-weight-bold mb-4">Family</h1>
+              <h2 class="h1 font-weight-bold">$170
+                <span class="text-small font-weight-normal ml-2">/ night</span>
+              </h2>
+    
+              <div class="custom-separator my-4 mx-auto bg-primary"></div>
+    
+              <ul class="list-unstyled my-5 text-small text-left font-weight-normal">
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Lorem ipsum dolor sit amet</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> At vero eos et accusamus</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Nam libero tempore</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+                <li class="mb-3">
+                  <i class="fa fa-check mr-2 text-primary"></i> Sed ut perspiciatis</li>
+              </ul>
+              <a href="#" class="btn btn-primary btn-block p-2 shadow rounded-pill">Subscribe</a>
+            </div>
+          </div>
+      
+    
+        </div>
+      </div>
+    </section> 
+  -->
+
+
 </body>
 
 
