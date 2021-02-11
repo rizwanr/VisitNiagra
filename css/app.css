@@ -7593,7 +7593,9 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Raleway" , sans-serif;
   background-color: #f2f2f2;
-  margin: 0; }
+  margin: 0;
+  display: block;
+  text-rendering: optimizeLegibility; }
 
 * {
   margin: 0;
@@ -7657,30 +7659,36 @@ body {
 .section-about .feature-box:hover {
   transform: translate(-0.5rem) scale(1.02); }
 
-.section-see-and-do {
-  list-style: none;
+.see-do-photo {
   width: 100%;
-  margin: 0; }
-  .section-see-and-do li {
-    display: block;
-    float: left;
-    width: 25%; }
-  .section-see-and-do .placetovisit {
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; }
+  .see-do-photo img {
+    opacity: 0.7;
     width: 100%;
-    margin: 0;
-    /*so that the image does not flow out of the screen */
-    overflow: hidden;
-    background-color: black; }
-    .section-see-and-do .placetovisit img {
-      opacity: 0.9;
-      width: 100%;
-      height: 300px;
-      /*increase the size of the image */
-      transform: scale(1.15);
-      transition: transform 0.5s, opacity 0.5s; }
-    .section-see-and-do .placetovisit img:hover {
-      transform: scale(1);
-      opacity: 1; }
+    height: 300px;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
+    transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+    transition: transform 0.5s, opacity 0.5s; }
+  .see-do-photo img:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03); }
+
+.pricing-section .card {
+  width: 18rem;
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  transition: all .8s; }
+  .pricing-section .card__side {
+    height: 43rem;
+    transition: all .8s; }
+  hover .pricing-section .card__side {
+    transform: rotateY(180deg); }
 
 /* Navigation bar shows up in screen size small and below
 */
